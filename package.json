@@ -1,0 +1,26 @@
+{
+  "name": "todolist",
+  "version": "0.0.1",
+  "description": "todo list sample backbone, systemjs and jquery",
+  "main": "index.js",
+  "scripts": {
+    "test": "lite-server"
+  },
+  "keywords": [
+    "sample",
+    "todo",
+    "systemjs",
+    "backbone"
+  ],
+  "author": "cesar iduarte",
+  "license": "ISC",
+  "dependencies": {
+    "backbone": "^1.3.3",
+    "systemjs": "^0.20.10",
+    "typescript": "^2.2.1",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "lite-server": "^2.3.0"
+  }
+}
