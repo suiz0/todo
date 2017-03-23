@@ -6,9 +6,8 @@ module.exports = Backbone.View.extend({
     el: 'body',
     template: _.template('<div class="notification-wrapper"></div>'),
     initialize: function(options) {
-        this.log = options.log;
-        this.listenTo(this.collection, 'add', this.notifyAdd);
-        this.listenTo(this.collection, 'remove', this.notifyRemove);
+        this.listenTo(options.source, 'add', this.notifyAdd);
+        this.listenTo(options.source, 'remove', this.notifyRemove);
     },
     render: function() {
         // do nothing
@@ -31,7 +30,7 @@ module.exports = Backbone.View.extend({
         this.notify(entry);
     },
     notify: function(entry) {
-        this.log.add(entry);
+        this.collection.add(entry);
         this.renderOne(entry);
     },
     renderOne: function(entry) {
