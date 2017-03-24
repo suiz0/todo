@@ -1,6 +1,6 @@
 var Backbone = require('backbone');
-var EntryView =  require('./entry.js');
-var Entry =  require('../models/entry.js');
+var EntryView =  require('./entry');
+var Entry =  require('../models/entry');
 
 module.exports = Backbone.View.extend({
     el: 'body',
