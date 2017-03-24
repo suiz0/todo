@@ -34,7 +34,6 @@
                     'npm:' : '/node_modules/'
                 },
                 map: {
-                    'src': 'src',
                     jquery: 'https://code.jquery.com/jquery-2.2.4.min.js',
                     backbone: 'npm:backbone/backbone.js',
                     underscore: 'npm:underscore/underscore.js'
@@ -45,6 +44,7 @@
                     }
                 }
             });
+
             SystemJS.import('app.js');
         </script>
     </body>
