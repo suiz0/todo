@@ -8,8 +8,11 @@ var Notification =  require('./src/notification/index');
 
 Backbone.$ = jquery;
 
-var records = new Todos();
-var appView = new MasterView({collection: records, result: new Todos(), model: new Todo()});
-var notif = new Notification({collection: records});
+// IIFE
+( function() {
+    var records = new Todos();
+    var appView = new MasterView({collection: records, result: new Todos(), model: new Todo()});
+    var notif = new Notification({collection: records});
 
-records.fetch();
+    records.fetch();
+} )();

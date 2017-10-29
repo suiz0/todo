@@ -7,6 +7,15 @@
         body {
             margin-top: 50px;
         }
+
+        ul {
+            list-style: none;
+        }
+
+        #todo-list {
+            padding: 0px;
+        }
+
         .notification-wrapper {
             padding: 0px;
             margin: 0px;
@@ -22,7 +31,11 @@
         </style>
     </head>
     <body>
-        <div id="todo">
+        <div id="app">
+            <input type="text" id="todo-desc" name="todo-desc" />
+            <button id="addTodo">Add</button>
+            <ul id="todo-list">
+            </ul>
         </div>
         <script type="text/html" id="todo-item">
             <span><%=name%></span>
